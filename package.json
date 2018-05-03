@@ -1,0 +1,29 @@
+{
+  "name": "webtask-sanity-slack-update",
+  "version": "1.0.0",
+  "description": "Get updates in Slack when someone does something in Sanity",
+  "main": "sanity-slack-update.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmelve/webtask-sanity-slack-update.git"
+  },
+  "keywords": [
+    "sanity",
+    "webtask",
+    "slack"
+  ],
+  "author": "Knut Melvær <knut.melvaer@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kmelve/webtask-sanity-slack-update/issues"
+  },
+  "homepage": "https://github.com/kmelve/webtask-sanity-slack-update#readme",
+  "dependencies": {
+    "@sanity/client": "^0.128.3",
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0"
+  }
+}
