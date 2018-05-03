@@ -8,11 +8,13 @@ Get updates in Slack when someone does something in [Sanity](https://sanity.io).
 
 ### 1. Setting up the webtask script
 
-If you have the `wt` command line interface, run to deploy this script on your own Webtask-account: 
+If you have the `wt` command line interface, run to deploy this script on your own Webtask-account:
 
 ```$ wt create https://raw.githubusercontent.com/kmelve/webtask-sanity-slack-update/master/sanity-slack-update.js --name sanity-slack-update```
 
-You can also [copy-paste the code](https://raw.githubusercontent.com/kmelve/webtask-sanity-slack-update/master/sanity-slack-update.js) into the online editor at [webtask.io/make](https://webtask.io).
+You can also [copy-paste the code](https://raw.githubusercontent.com/kmelve/webtask-sanity-slack-update/master/webtask.js) into the online editor at [webtask.io/make](https://webtask.io).
+
+Make sure that the node dependencies (babel-polyfill, axios, @sanity/client) are installed. If you need to add these manually, do so by clicking the wrench button and choose *npm modules*.
 
 ### 2. Create a Slack Incoming Webhook
 
@@ -22,7 +24,7 @@ In your webtask editor (`$ wt editor` or [webtask.io/make](https://webtask.io/ma
 
 ### 3. Add your webtask url to Sanity webhooks
 
-Copy the webtask-url printed at the bottom line of the editor page (should look like `https://wt-<SECRET CODE>.sandbox.auth0-extend.com/<SCRIPT NAME>`) and run `sanity hook create name-of-your-choosing`. Choose the dataset you want reporting on, and paste in your webtask-url when prompted. 
+Copy the webtask-url printed at the bottom line of the editor page (should look like `https://wt-<SECRET CODE>.sandbox.auth0-extend.com/<SCRIPT NAME>`) and run `sanity hook create name-of-your-choosing`. Choose the dataset you want reporting on, and paste in your webtask-url when prompted.
 
 ## Customize
 
