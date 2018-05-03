@@ -2,7 +2,7 @@
 
 Sanity + Webtask + Slack = :heart:
 
-Get updates in Slack when someone does something in Sanity. This works great if it's mostly humans that does the work in your Sanity backend. If you have machines that either does frequent or many operations it can be a bit noisy. Test it on yourself before letting it loose in your Slack team.
+Get updates in Slack when someone does something in [Sanity](https://sanity.io). This works great if it's mostly humans that does the work in your Sanity backend. If you have machines that either does frequent or many operations it can be a bit noisy. Test it on yourself before letting it loose in your Slack team.
 
 ## Installation
 
