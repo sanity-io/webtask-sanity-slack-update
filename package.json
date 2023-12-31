@@ -23,7 +23,7 @@
   "homepage": "https://github.com/kmelve/webtask-sanity-slack-update#readme",
   "dependencies": {
     "@sanity/client": "^0.128.3",
-    "axios": "^0.18.0",
+    "axios": "^1.6.3",
     "babel-polyfill": "^6.26.0"
   }
 }
